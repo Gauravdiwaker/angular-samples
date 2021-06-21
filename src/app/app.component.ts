@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
-  isvalid:boolean=true;
-  changevalue(valid:any){
-    this.isvalid=valid;
-  }
+  color='green'
+  
 }

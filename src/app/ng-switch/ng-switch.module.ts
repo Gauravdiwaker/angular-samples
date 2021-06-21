@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GauravComponent } from './gaurav.component';
+import { NgSwitchComponent } from './ng-switch.component';
 
 
 
 @NgModule({
   declarations: [
-    GauravComponent
+    NgSwitchComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    GauravComponent
+    NgSwitchComponent
   ]
 })
-export class GauravModule { }
+export class NgSwitchModule { }
