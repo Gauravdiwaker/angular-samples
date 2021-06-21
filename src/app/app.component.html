@@ -1,0 +1,10 @@
+<input type="radio" name="radio" (click)="changevalue(true)">true
+<input type="radio" name="radio" (click)="changevalue(false)">false
+<div *ngIf="isvalid">
+    this is valid data
+</div>
+<div *ngIf="!isvalid">
+    this is not valid data
+</div>
+<app-gaurav></app-gaurav>
+<router-outlet></router-outlet>

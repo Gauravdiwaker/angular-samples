@@ -1,0 +1,5 @@
+CREATE src/app/publisher/publisher.component.html (24 bytes)
+CREATE src/app/publisher/publisher.component.spec.ts (647 bytes)
+CREATE src/app/publisher/publisher.component.ts (288 bytes)
+CREATE src/app/publisher/publisher.component.scss (0 bytes)
+UPDATE src/app/app.module.ts (489 bytes)
