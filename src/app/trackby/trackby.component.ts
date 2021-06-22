@@ -1,0 +1,116 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-trackby',
+  templateUrl: './trackby.component.html',
+  styleUrls: ['./trackby.component.scss']
+})
+export class TrackbyComponent implements OnInit {
+  students:any[];
+  constructor() {
+    this.students=[
+      {
+        studentid:1,
+        name:'harsh',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:2,
+        name:'bhasker',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:3,
+        name:'vikash',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:4,
+        name:'shashank',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:5,
+        name:'shivam',
+        gender:'male',
+        class:9,
+      },
+    ];
+   }
+
+  ngOnInit(): void {
+  }
+  getmorestudents():void{
+    this.students=[
+      {
+        studentid:1,
+        name:'prince',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:2,
+        name:'bipin',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:3,
+        name:'karan',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:4,
+        name:'asmit',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:5,
+        name:'vikram',
+        gender:'male',
+        class:9,
+      },
+    ];
+  }
+  getoldstudents():void{
+    this.students=[
+      {
+        studentid:1,
+        name:'harsh',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:2,
+        name:'bhasker',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:3,
+        name:'vikash',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:4,
+        name:'shashank',
+        gender:'male',
+        class:9,
+      },
+      {
+        studentid:5,
+        name:'shivam',
+        gender:'male',
+        class:9,
+      },
+    ];
+  }
+  
+}

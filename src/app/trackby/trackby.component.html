@@ -1,0 +1,11 @@
+<table border="1">
+    <tr *ngFor="let s of students; let i=index">
+       <td>{{i+1}}</td>
+       <td>{{s.studentid}}</td>
+       <td>{{s.name}}</td>
+       <td>{{s.gender}}</td>
+       <td>{{s.class}}</td>
+    </tr>
+</table>
+<br>
+<button (click)="getmorestudents() ;">click for more students</button>

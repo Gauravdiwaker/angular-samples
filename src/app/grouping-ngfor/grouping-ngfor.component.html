@@ -1,0 +1,10 @@
+<h1>using of grouping ngfor</h1>
+
+<ul *ngFor="let group of countrydetails">
+    <li>{{group.country}}</li>
+    <ul>
+        <li *ngFor="let person of group.people">
+            {{person.name}}
+        </li>
+    </ul>
+</ul>

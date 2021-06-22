@@ -1,0 +1,48 @@
+<!-- this is the ngfor  -->
+
+
+<ul>
+    <li *ngFor="let student of students">
+        {{student.name}}
+    </li>
+</ul>
+
+<!-- this is the index of local variables -->
+
+<ul>
+    <li *ngFor="let student of students ; let i=index">
+      {{i+2*2}} - {{student.name}}
+    </li>
+</ul>
+
+<!-- this is the first of local variables -->
+
+<ul>
+    <li *ngFor="let student of students ; let f=first">
+        {{student.name}} - {{f}}
+    </li>
+</ul>
+
+<!-- this is the last of local variables -->
+
+<ul>
+    <li *ngFor="let student of students ; let l=last ">
+        {{student.name}} - {{l}}
+    </li>
+</ul>
+
+<!-- this is the even of local variables -->
+
+<ul>
+    <li *ngFor="let student of students ; let ev=even ">
+        {{student.name}} - {{ev}}
+    </li>
+</ul>
+
+<!-- this is the odd of local variables -->
+
+<ul>
+    <li *ngFor="let student of students ; let od=odd">
+        {{student.name}} - {{od}}
+    </li>
+</ul>
