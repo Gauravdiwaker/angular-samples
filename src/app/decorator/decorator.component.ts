@@ -13,7 +13,7 @@ export class DecoratorComponent implements OnInit {
    @HostListener('click',['$event'])
    onhostclick(event:Event)
    {
-     alert("hello user");
+     alert(event);
    }
   ngOnInit(): void {
   }

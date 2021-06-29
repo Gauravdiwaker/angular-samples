@@ -1,6 +1,6 @@
 <!-- this is the ngfor  -->
 
-
+<h1>using ngfor</h1>
 <ul>
     <li *ngFor="let student of students">
         {{student.name}}
@@ -11,7 +11,7 @@
 
 <ul>
     <li *ngFor="let student of students ; let i=index">
-      {{i+2*2}} - {{student.name}}
+      {{i+2-1}} - {{student.name}}
     </li>
 </ul>
 

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+            <form [formGroup]='signupForm' (ngSubmit)="PostData(signupForm)">
+                <div class="form-group">
+                    <input type="text" formControlName='fname' placeholder="your first name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" formControlName='lname' placeholder="your last name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" formControlName='Emailid' placeholder="your Email id">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" formControlName='userpassword' placeholder="your password">
+                </div>
+                <br>
+                <div>
+                    <input type="Submit" [disabled]="!signupForm.valid" value="Post Data">
+                    <button type="button" (click) = "resetForm()">reset</button>
+                    <br>
+                    <button type="button" (click) = "filldata()">filldata</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

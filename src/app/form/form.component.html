@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #regForm='ngForm' (ngSubmit)="Register(regForm)">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="first name" name="firstname" username required ngModel #username="ngModel">
+                    <span class="help-bpx" *ngIf="username.touched && !username.valid">user name is required</span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="mobile number" name="mobile number" number
+                        required ngModel #number="ngModel">
+                    <span class="help-bpx" *ngIf="number.touched && !number.valid">mobile number is required</span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="email" name="email" email required ngModel
+                        #email="ngModel">
+                    <span class="help-bpx" *ngIf="email.touched && !email.valid">email address is required</span>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="btn btn-primary" id="Register"
+                        [disabled]="!regForm.valid">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
